@@ -1,6 +1,5 @@
 package es.juandavidveg.ticketrestaurantlog.lib.helpers
 
-import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketSaver
 import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketTypeProvider
 import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
 

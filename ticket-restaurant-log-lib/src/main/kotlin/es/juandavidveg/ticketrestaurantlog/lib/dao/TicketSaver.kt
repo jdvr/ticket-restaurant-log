@@ -1,7 +1,7 @@
 package es.juandavidveg.ticketrestaurantlog.lib.dao
 
-import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
+import es.juandavidveg.ticketrestaurantlog.lib.models.Ticket
 
 interface TicketSaver {
-    fun save(ticketType: TicketType, number: Int)
+    fun save(ticket: Ticket)
 }
