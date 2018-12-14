@@ -3,6 +3,8 @@ package es.juandavidveg.ticketrestaurantlog.lib
 import es.juandavidveg.ticketrestaurantlog.lib.helpers.TicketTypeSaverSpy
 import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
 import kotlin.test.Test
+import kotlin.test.assertFails
+import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
 class TicketTypeRecorderShould {
@@ -13,6 +15,14 @@ class TicketTypeRecorderShould {
         val recorder = TicketTypeRecorder(saver)
         recorder.record(TicketType(6, "EUR"))
         assertTrue(saver.hasBeenInvoked())
+    }
+
+    @Test
+    fun fail_when_ticket_type_amount_is_0() {
+        val saver = TicketTypeSaverSpy()
+        val recorder = TicketTypeRecorder(saver)
+        assertFails { recorder.record(TicketType(0, "EUR")) }
+        assertFalse(saver.hasBeenInvoked())
     }
 
 }
