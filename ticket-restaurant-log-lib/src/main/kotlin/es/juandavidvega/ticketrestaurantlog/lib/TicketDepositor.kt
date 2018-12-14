@@ -1,9 +1,9 @@
-package es.juandavidveg.ticketrestaurantlog.lib
+package es.juandavidvega.ticketrestaurantlog.lib
 
-import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketSaver
-import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketTypeProvider
-import es.juandavidveg.ticketrestaurantlog.lib.models.Ticket
-import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
+import es.juandavidvega.ticketrestaurantlog.lib.dao.TicketSaver
+import es.juandavidvega.ticketrestaurantlog.lib.dao.TicketTypeProvider
+import es.juandavidvega.ticketrestaurantlog.lib.models.Ticket
+import es.juandavidvega.ticketrestaurantlog.lib.models.TicketType
 
 class TicketDepositor(
         private val saver: TicketSaver,

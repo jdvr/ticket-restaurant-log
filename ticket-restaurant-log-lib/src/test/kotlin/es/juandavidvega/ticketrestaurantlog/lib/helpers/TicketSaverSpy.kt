@@ -1,7 +1,7 @@
-package es.juandavidveg.ticketrestaurantlog.lib.helpers
+package es.juandavidvega.ticketrestaurantlog.lib.helpers
 
-import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketSaver
-import es.juandavidveg.ticketrestaurantlog.lib.models.Ticket
+import es.juandavidvega.ticketrestaurantlog.lib.dao.TicketSaver
+import es.juandavidvega.ticketrestaurantlog.lib.models.Ticket
 
 class TicketSaverSpy(var hasBeenInvoked: Boolean = false,
                      var argument: Ticket? = null) : TicketSaver {

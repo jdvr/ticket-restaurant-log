@@ -1,9 +1,10 @@
-package es.juandavidveg.ticketrestaurantlog.lib
+package es.juandavidvega.ticketrestaurantlog.lib
 
-import es.juandavidveg.ticketrestaurantlog.lib.helpers.TicketSaverSpy
-import es.juandavidveg.ticketrestaurantlog.lib.helpers.TicketTypeProviderSpy
-import es.juandavidveg.ticketrestaurantlog.lib.models.Ticket
-import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
+import es.juandavidvega.ticketrestaurantlog.lib.helpers.TicketSaverSpy
+import es.juandavidvega.ticketrestaurantlog.lib.helpers.TicketTypeProviderSpy
+import es.juandavidvega.ticketrestaurantlog.lib.TicketDepositor
+import es.juandavidvega.ticketrestaurantlog.lib.models.Ticket
+import es.juandavidvega.ticketrestaurantlog.lib.models.TicketType
 import kotlin.test.Test
 import kotlin.test.assertTrue
 

@@ -1,7 +1,7 @@
-package es.juandavidveg.ticketrestaurantlog.lib.helpers
+package es.juandavidvega.ticketrestaurantlog.lib.helpers
 
-import es.juandavidveg.ticketrestaurantlog.lib.dao.TicketTypeSaver
-import es.juandavidveg.ticketrestaurantlog.lib.models.TicketType
+import es.juandavidvega.ticketrestaurantlog.lib.dao.TicketTypeSaver
+import es.juandavidvega.ticketrestaurantlog.lib.models.TicketType
 
 class TicketTypeSaverSpy(var hasBeenInvoked: Boolean = false) : TicketTypeSaver {
 
