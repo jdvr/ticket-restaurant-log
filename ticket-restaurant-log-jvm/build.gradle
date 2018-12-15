@@ -1,6 +1,21 @@
+buildscript {
+    ext.kotlin_version = '1.2.51'
+
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 plugins {
     id 'kotlin-platform-jvm' version '1.2.51'
 }
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
 repositories {
     mavenCentral()
 }
@@ -20,3 +35,11 @@ compileTestKotlin {
     kotlinOptions.jvmTarget = "1.8"
 }
 sourceCompatibility = "1.8"
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': "es.juandavidvega.ticketrestaurantlog.lib.Main"
+    }
+    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+}
