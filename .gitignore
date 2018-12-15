@@ -2,3 +2,4 @@
 **build/
 .gradle
 ticket-restaurant-log-js/web/
+ticket-restaurant-log-jvm/out/
